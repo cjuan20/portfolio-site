@@ -2,81 +2,94 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Juan Chen</title>
+	<title>Web Development</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/overlay.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript" src="../js/overlay.js"></script>
+
 </head>
 
 <body id="web-page">
 	<nav>
-		<a href="index.html">Home</a>
-		<a href="about.html">ABOUT</a>
-		<a href="photography.html">PHOTOGRAPHY</a>
+		<!-- NAV -->
+		<div id="myNav" class="overlay">
+			<!-- CLOSE NAV-->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+		  <div class="overlay-content">
+		    <a href="index.html">HOME</a>
+		    <a href="about.html">ABOUT ME</a>
+				<a href="web.html">WEB DEVELOPMENT</a>
+				<a href="photography.html">PHOTOGRAPHY</a>
+		  </div>
+		</div>
+		<!-- OPEN NAV-->
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="nav-png" src="../css/img/nav.png"></span>
 	</nav>
+	
 
-<div id="skills-container">
-	<h1>SKILLS</h1><br>
-	<hr>
+	<div id="skills-container">
+		<h1>SKILLS</h1><br>
+		<hr>
 
-	<div id="skill-list">
-			<h3 id="first-skill">RUBY ON RAILS</h3>
-			<h3>JAVASCRIPT</h3>
-				<h4>jQuery</h4>
-				<h4>AJAX</h4>
-			<h3>MEAN STACK</h3>
-				<h4>MongoDB</h4>
-				<h4>Express.js</h4>
-				<h4>AngularJS</h4>
-				<h4>Node.js</h4>
-			<h3>SQL</h3> 
-			<h3>POSTGRESQL</h3>
-			<h3>HTML</h3>
-			<h3>CSS</h3>
-			<h3>GIT</h3>
-			<h3>GITHUB</h3>
-	</div>
-</div>
-
-
-<div id="all-projects-container">
-	<h1>PROJECTS</h1>
-	<hr>
-
-	<div class="p-container">
-			<button class="p-button"><a href="http://biscuitandchai.com/" target=“_blank”>BISCUIT & CHAI</a></button>
-			<h4 id="p-description">Company Website</h4>
-			<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Javascript, jQuery, HTML, CSS</h4>
-			<img id="p-gif" src="../css/img/biscuitandchai.gif">
+		<div id="skill-list">
+				<h3 id="first-skill">RUBY ON RAILS</h3>
+				<h3>JAVASCRIPT</h3>
+					<h4>jQuery</h4>
+					<h4>AJAX</h4>
+				<h3>MEAN STACK</h3>
+					<h4>MongoDB</h4>
+					<h4>Express.js</h4>
+					<h4>AngularJS</h4>
+					<h4>Node.js</h4>
+				<h3>SQL</h3> 
+				<h3>POSTGRESQL</h3>
+				<h3>HTML</h3>
+				<h3>CSS</h3>
+				<h3>GIT</h3>
+				<h3>GITHUB</h3>
+		</div>
 	</div>
 
-	<div class="p-container">
-			<button class="p-button"><a href="https://wishlist-app120.herokuapp.com/" target=“_blank”>WISHLIST</a></button>
-			<h4 id="p-description">Personalized Shopping Wishlist App</h4>
-			<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Ruby on Rails, Javascript, jQuery, HTML, CSS</h4>
-			<img id="p-gif" src="../css/img/wishlist.gif">
-	</div>
 
-	<div class="p-container">
-			<button class="p-button"><a href="https://recipe-app120.herokuapp.com/" target=“_blank”>COOK-IT</a></button>
-			<h4 id="p-description">Recipe Sharing App</h4>
-			<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Node.js, MongoDB, Mongoose, Express, AJAX, Javascript, jQuery, passportJS, HTML, CSS</h4>
-			<img id="p-gif" src="../css/img/cookit.gif">
-	</div>
+	<div id="all-projects-container">
+		<h1>PROJECTS</h1>
+		<hr>
 
-<!-- <div class="p-container">
-			<h2 id="p-name">WellSpent</h2>
-			<h4 id="p-description">MEAN Stack User Curated Location App</h4>
-			<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">MongoDB, Express, AngularJS, Node.js, JavaScript / JQuery, HTML, CSS</h4>
-			<img id="p-gif" src="../css/img/wishlist.gif">
-	</div> -->
+		<div class="p-container">
+				<button class="p-button"><a href="http://biscuitandchai.com/" target=“_blank”>BISCUIT & CHAI</a></button>
+				<h4 id="p-description">Company Website</h4>
+				<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Javascript, jQuery, HTML, CSS</h4>
+				<img id="p-gif" src="../css/img/biscuitandchai.gif">
+		</div>
 
-	<div class="p-container">
-			<button class="p-button"><a href="http://cjuan20.github.io/Connect4/" target=“_blank”>EMOJI CONNECT 4</a></button>
-			<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Javascript, jQuery, HTML and CSS</h4>
-			<img id="p-gif" src="../css/img/emojiconnect.gif">
+		<div class="p-container">
+				<button class="p-button"><a href="https://wishlist-app120.herokuapp.com/" target=“_blank”>WISHLIST</a></button>
+				<h4 id="p-description">Personalized Shopping Wishlist App</h4>
+				<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Ruby on Rails, Javascript, jQuery, HTML, CSS</h4>
+				<img id="p-gif" src="../css/img/wishlist.gif">
+		</div>
+
+		<div class="p-container">
+				<button class="p-button"><a href="https://recipe-app120.herokuapp.com/" target=“_blank”>COOK-IT</a></button>
+				<h4 id="p-description">Recipe Sharing App</h4>
+				<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Node.js, MongoDB, Mongoose, Express, AJAX, Javascript, jQuery, passportJS, HTML, CSS</h4>
+				<img id="p-gif" src="../css/img/cookit.gif">
+		</div>
+
+	<!-- <div class="p-container">
+				<h2 id="p-name">WellSpent</h2>
+				<h4 id="p-description">MEAN Stack User Curated Location App</h4>
+				<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">MongoDB, Express, AngularJS, Node.js, JavaScript / JQuery, HTML, CSS</h4>
+				<img id="p-gif" src="../css/img/wishlist.gif">
+		</div> -->
+
+		<div class="p-container">
+				<button class="p-button"><a href="http://cjuan20.github.io/Connect4/" target=“_blank”>EMOJI CONNECT 4</a></button>
+				<h4 id="p-stack"><img id="coding-icon"src="../css/img/coding-icon.png">Javascript, jQuery, HTML and CSS</h4>
+				<img id="p-gif" src="../css/img/emojiconnect.gif">
+		</div>
 	</div>
-</div>
 
 
 </body>
